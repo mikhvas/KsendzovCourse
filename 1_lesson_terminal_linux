@@ -1,0 +1,108 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я 
+pwd (/Users/vasiliy/Testing)
+2) Создать папку 
+mkdir folder_qa
+3) Зайти в папку 
+cd folder_qa
+4) Создать 3 папки 
+mkdir qa1 qa2 qa3
+5) Зайти в любоую папку 
+cd qa1
+6) Создать 5 файлов (3 txt, 2 json) 
+touch 1.txt 2.txt 3.txt 4.json 5.json
+7) Создать 3 папки 
+mkdir a1 a2 a3
+8. Вывести список содержимого папки 
+ls -la
+
+drwxr-xr-x  10 vasiliy  staff  320 14 апр 18:38 .
+drwxr-xr-x   5 vasiliy  staff  160 14 апр 18:35 ..
+drwxr-xr-x   2 vasiliy  staff   64 14 апр 18:38 1
+-rw-r--r--   1 vasiliy  staff    0 14 апр 18:37 1.txt
+drwxr-xr-x   2 vasiliy  staff   64 14 апр 18:38 2
+-rw-r--r--   1 vasiliy  staff    0 14 апр 18:37 2.txt
+drwxr-xr-x   2 vasiliy  staff   64 14 апр 18:38 3
+-rw-r--r--   1 vasiliy  staff    0 14 апр 18:37 3.txt
+-rw-r--r--   1 vasiliy  staff    0 14 апр 18:37 4.json
+-rw-r--r--   1 vasiliy  staff    0 14 апр 18:37 5.json 
+9) + Открыть любой txt файл 
+- cat >> 1.txt
+10) + написать туда что-нибудь, любой текст.
+test1
+test2
+Test3
+Test4
+Testing5
+Testo6                 
+test7
+test8
+test9
+test10
+11) + сохранить и выйти. 
+- ^C
+12) Выйти из папки на уровень выше 
+- cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv qa1/1.txt qa2/1.txt
+mv qa1/4.json qa3/4.json
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp qa1/2.txt qa2/2.txt
+cp qa1/3.txt qa3/3.txt
+15) Найти файл по имени
+find . -name "1.txt"
+./qa2/1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f qa2/1.txt
+17) вывести несколько первых строк из текстового файла
+head -2 qa2/1.txt
+test1
+test2
+18) вывести несколько последних строк из текстового файла
+tail -2 qa2/1.txt
+test8
+test9
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less qa2/1.txt
+20) вывести дату и время
+date +%c
+четверг, 14 апреля 2022 г. 19:13:44
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl  http://162.55.220.72:5005/terminal-hw-request
+
+{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+curl http://162.55.220.72:5005/get_method?"name=(Mikhvas)&age=(33)"
+
+["(Mikhvas)","(33)"]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+touch script.sh
+vim script.sh
+
+#!/bin/sh
+cd folder_qa
+mkdir qa1 qa2 qa3
+cd qa1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir a1 a2 a3
+ls -la
+mv 1.txt a1/1.txt
+mv 4.json a2/4.json
+
+Esc :wq
+
+Sh script.sh
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
