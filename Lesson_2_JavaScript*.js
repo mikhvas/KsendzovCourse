@@ -1,8 +1,8 @@
-HW_1* Задания с разным количеством звездочек:)
-1*:Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
-Пример: const checkAge = function(age) {
-Ваши преобразования
-}Вывести в консоль результат работы функции с возрастами 17, 18, 61
+// HW_1* Задания с разным количеством звездочек:)
+// 1*:Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+// Пример: const checkAge = function(age) {
+// Ваши преобразования
+// }Вывести в консоль результат работы функции с возрастами 17, 18, 61
 
 const checkAge = function(age)
 function checkAge(age) {
@@ -30,7 +30,7 @@ checkAge(17)
 checkAge(18)
 checkAge(60)
 checkAge(61)
-2*:Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+// 2*:Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 
 function checkAge(age) {
 
@@ -60,7 +60,7 @@ function checkAge(age) {
 
 checkAge(17)
 checkAge("0123")
-3**:Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+// 3**:Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 function checkAge(age) {
     age = Number(age);                               //сначала преобразовываем в намбер
 
@@ -94,7 +94,7 @@ checkAge(17)
 checkAge("22")
 checkAge("22фвыф")
 
-4***:Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+// 4***:Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 function checkAge(age) {
     age = Number(age);                               
 
@@ -127,22 +127,22 @@ alert ("Спасибо")
 
 checkAge(agePromt)
 
-Привязка к html
+// Привязка к html
 
-<!DOCTYPE html>
-<html1 lang="en">
-<head>
+// <!DOCTYPE html>
+// <html1 lang="en">
+// <head>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-RU-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="./qwert.js"></script>
-<title>Document</title>
+// <meta charset="UTF-8">
+// <meta http-equiv="X-RU-Compatible" content="IE=edge">
+// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// <script src="./qwert.js"></script>
+// <title>Document</title>
 
-</head>
-<body>
+// </head>
+// <body>
     
-</body>
-</html1>
+// </body>
+// </html1>
 
  
