@@ -1,0 +1,36 @@
+GitHub. HW_2
+1. Íà ëîêàëüíîì ðåïîçèòîðèè ñäåëàòü âåòêè äëÿ:
+- Postman   // git branch postman
+- Jmeter     // git branch jmeter
+- CheckLists // git branch checkLists
+- Bag Reports  // git branch bugReports
+- SQL          // git branch sql
+- Charles        // git branch charles
+- Mobile testing   // git branch mobileTesting
+
+2. Çàïóøèòü âñå âåòêè íà âíåøíèé ðåïîçèòîðèé   //git push -u origin postman | jmeter | checkLists | bugReports |
+sql | charles mobileTesting
+
+3. Â âåòêå Bag Reports ñäåëàòü òåêñòîâûé äîêóìåíò ñî ñòðóêòóðîé áàã ðåïîðòà
+//git checkout bugReports // vim bugreport.txt 
+
+4. Çàïóøèòü ñòðóêòóðó áàãðåïîðòà íà âíåøíèé ðåïîçèòîðèé
+
+// git add . // git commit - m "add bugreport" //
+git checkout main // git push -u origin bugReports
+
+5. Âìåðæèòü âåòêó Bag Reports â Main
+//git merge bugReports -m "add branch to main"
+
+6. Çàïóøèòü main íà âíåøíèé ðåïîçèòîðèé.
+//git push -u origin main
+
+7. Â âåòêå CheckLists íàáðîñàòü ñòðóêòóðó ÷åê ëèñòà.
+// vim checklist //git add . // git commit -m "add checklist"
+
+8. Çàïóøèòü ñòðóêòóðó íà âíåøíèé ðåïîçèòîðèé
+//git push -u origin checkLists
+
+9. Íà âíåøíåì ðåïîçèòîðèè ñäåëàòü Pull Request âåòêè CheckLists â main
+
+10. Ñèíõðîíèçèðîâàòü Âíåøíþþ è Ëîêàëüíóþ âåòêè Main
